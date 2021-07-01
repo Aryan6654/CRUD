@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+  </head>
+  <body>
+    
+<div class="head">CRUD Operations Project</div>
+<div class="add">Create User</div>
+
+<form method="post" action="/">
+{% csrf_token %}
+<div>
+  <input type="text" name="Name" class="en1" placeholder="Enter Your Name"> 
+</div>
+<div>
+  <input type="password" name="password" class="en2" placeholder="Enter Your Password"> 
+</div>
+<div>
+<button class="submit" type="submit">Submit</button>
+</div>
+</form>
+
+
+<!-- <div>Update User</div> -->
+<!-- <div>Delete User</div> -->
+
+  </body>
+</html>
